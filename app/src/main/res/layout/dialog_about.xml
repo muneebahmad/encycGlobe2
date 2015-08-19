@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_stage_bg"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/abt_bg_layout"
+        android:orientation="vertical"
+        android:background="@drawable/dialog_bg"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:orientation="horizontal"
+            android:background="@drawable/dialog_title_bg"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/abt_dialog_title"
+                android:text="About Application"
+                android:textColor="@color/textColorWhite"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginLeft="12sp"
+                android:layout_marginTop="8sp"
+                />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/abt_dialog_message_text"
+                android:text="About"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_margin="5sp"
+                />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:gravity="right"
+            android:background="@drawable/dialog_footer_bg"
+            >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/abt_dialog_no_butt"
+                    android:layout_weight="1"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:text="OK"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:layout_marginTop="5sp"
+                    android:background="@drawable/button_positive_bg"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

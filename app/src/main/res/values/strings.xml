@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Global Encyclopedia</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">About</string>
+    <string name="admob_debug_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_ad_uinit_id">ca-app-pub-1980182569964765/8632075334</string>
+
+</resources>

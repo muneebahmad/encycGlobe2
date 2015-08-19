@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:weightSum="10"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/continent_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#dd9b4b"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_gravity="start"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:orientation="horizontal"
+        android:background="#dd9b4b"
+        android:id="@+id/continent_title_layout"
+        >
+
+        <TextView
+            android:id="@+id/continent_titleView"
+            android:text="@string/hello_world"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:textColor="#fff"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:gravity="left"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="ifContentScrolls"
+        android:layout_margin="5sp"
+        android:layout_weight="10"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/continent_main_linear_layout"
+            android:layout_margin="10sp"
+            >
+
+            <!-- AFRICA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5sp"
+                >
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:text="Africa"
+                    android:id="@+id/title_africa"
+                    android:background="@drawable/accordion_selector"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/textColorWhite"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:padding="15sp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/panel_africa"
+                    android:orientation="vertical"
+                    android:background="@drawable/scrollview_bg"
+                    android:visibility="gone"
+                    android:padding="5sp"
+                    >
+                        <!-- -->
+                    </LinearLayout>
+                </LinearLayout>
+
+            <!-- ANTARCTICA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5sp"
+                >
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:text="Antarctica"
+                    android:id="@+id/title_antarctica"
+                    android:background="@drawable/accordion_selector"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/textColorWhite"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:padding="15sp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/panel_antarctica"
+                    android:orientation="vertical"
+                    android:background="@drawable/scrollview_bg"
+                    android:visibility="gone"
+                    android:padding="5sp"
+                    >
+                    <!-- -->
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- ASIA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5sp"
+                >
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:text="Asia"
+                    android:id="@+id/title_asia"
+                    android:background="@drawable/accordion_selector"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/textColorWhite"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:padding="15sp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/panel_asia"
+                    android:orientation="vertical"
+                    android:background="@drawable/scrollview_bg"
+                    android:visibility="gone"
+                    android:padding="5sp"
+                    >
+                    <!-- -->
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- AUSTRALIA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5sp"
+                >
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:text="Australia"
+                    android:id="@+id/title_australia"
+                    android:background="@drawable/accordion_selector"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/textColorWhite"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:padding="15sp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/panel_australia"
+                    android:orientation="vertical"
+                    android:background="@drawable/scrollview_bg"
+                    android:visibility="gone"
+                    android:padding="5sp"
+                    >
+                    <!-- -->
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- EUROPE -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5sp"
+                >
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:text="Europe"
+                    android:id="@+id/title_europe"
+                    android:background="@drawable/accordion_selector"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/textColorWhite"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:padding="15sp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/panel_europe"
+                    android:orientation="vertical"
+                    android:background="@drawable/scrollview_bg"
+                    android:visibility="gone"
+                    android:padding="5sp"
+                    >
+                    <!-- -->
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- NORTH AMERICA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5sp"
+                >
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:text="North America"
+                    android:id="@+id/title_north_america"
+                    android:background="@drawable/accordion_selector"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/textColorWhite"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:padding="15sp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/panel_north_america"
+                    android:orientation="vertical"
+                    android:background="@drawable/scrollview_bg"
+                    android:visibility="gone"
+                    android:padding="5sp"
+                    >
+                    <!-- -->
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- SOUTH AMERICA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5sp"
+                >
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:text="South America"
+                    android:id="@+id/title_south_america"
+                    android:background="@drawable/accordion_selector"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/textColorWhite"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:padding="15sp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/panel_south_america"
+                    android:orientation="vertical"
+                    android:background="@drawable/scrollview_bg"
+                    android:visibility="gone"
+                    android:padding="5sp"
+                    >
+                    <!-- -->
+                </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/continent_notify"
+                android:textColor="#ff0000"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="italic"
+                android:text="*Please Note: Currently not all the countries in each continent are covered. We will update the data in our next release."
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5sp"
+            > </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:gravity="bottom|center_horizontal"
+        android:layout_weight="1"
+        >
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            app:adSize="BANNER"
+            app:adUnitId="@string/admob_ad_uinit_id" >
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+</LinearLayout>

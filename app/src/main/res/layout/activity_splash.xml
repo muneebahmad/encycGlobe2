@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app_bg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical|center_horizontal"
+        >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:id="@+id/splash_logo"
+                />
+
+        <ProgressBar
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="100"
+            android:progress="0"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loadingView"
+            android:text="LOADING"
+            android:textColor="#1e90ff"
+            android:textStyle="bold"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="2sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stateView"
+            android:text="reading state"
+            android:textStyle="italic"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
+
+        </LinearLayout>
+
+</LinearLayout>

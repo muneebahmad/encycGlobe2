@@ -1,0 +1,446 @@
+package com.ardentlabs.globalencyc.data;
+
+import com.ardentlabs.globalencyc.R;
+
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * Created by muneebahmad on 26/03/15.
+ */
+public class ResourcesManager {
+
+    private static Map<Integer, Integer> flagButtonMap = new HashMap<>();
+    private static Map<Integer, Integer> flagMap = new HashMap<>();
+
+    public ResourcesManager() {}
+
+    public static void initResourcesManager() {
+        initFlagButtons();
+        initFlags();
+    }
+
+    /**
+     * FLAG BUTTONS
+     */
+    private static void initFlagButtons() {
+        flagButtonMap.put(1, R.drawable.afghanistan);
+        flagButtonMap.put(2, R.drawable.albania);
+        flagButtonMap.put(3, R.drawable.algeria);
+        flagButtonMap.put(4, R.drawable.andorra);
+        flagButtonMap.put(5, R.drawable.flag_angola);
+        flagButtonMap.put(6, R.drawable.antigua_and_barbuda);
+        flagButtonMap.put(7, R.drawable.argentina);
+        flagButtonMap.put(8, R.drawable.armenia);
+        flagButtonMap.put(9, R.drawable.australia);
+        flagButtonMap.put(10, R.drawable.austria);
+        flagButtonMap.put(11, R.drawable.azerbaijan);
+        flagButtonMap.put(12, R.drawable.flag_bahamas);
+        flagButtonMap.put(13, R.drawable.bahrain);
+        flagButtonMap.put(14, R.drawable.bangladesh);
+        flagButtonMap.put(15, R.drawable.barbados);
+        flagButtonMap.put(16, R.drawable.belarus);
+        flagButtonMap.put(17, R.drawable.belgium);
+        flagButtonMap.put(18, R.drawable.belize);
+        flagButtonMap.put(19, R.drawable.benin);
+        flagButtonMap.put(20, R.drawable.bhutan);
+        flagButtonMap.put(21, R.drawable.bolivia);
+        flagButtonMap.put(22, R.drawable.bosnia_and_herzegovina);
+        flagButtonMap.put(23, R.drawable.botswana);
+        flagButtonMap.put(24, R.drawable.brazil);
+        flagButtonMap.put(25, R.drawable.brunei);
+        flagButtonMap.put(26, R.drawable.bulgaria);
+        flagButtonMap.put(27, R.drawable.burkina_faso);
+        flagButtonMap.put(28, R.drawable.burundi);
+        flagButtonMap.put(29, R.drawable.cambodia);
+        flagButtonMap.put(30, R.drawable.cameroon);
+        flagButtonMap.put(31, R.drawable.canada);
+        flagButtonMap.put(32, R.drawable.cape_verde);
+        flagButtonMap.put(33, R.drawable.central_african_republic);
+        flagButtonMap.put(34, R.drawable.chad);
+        flagButtonMap.put(35, R.drawable.chile);
+        flagButtonMap.put(36, R.drawable.colombia);
+        flagButtonMap.put(37, R.drawable.comoros);
+        flagButtonMap.put(38, R.drawable.costa_rica);
+        flagButtonMap.put(39, R.drawable.cote_divoire);
+        flagButtonMap.put(40, R.drawable.croatia);
+        flagButtonMap.put(41, R.drawable.cuba);
+        flagButtonMap.put(42, R.drawable.cyprus);
+        flagButtonMap.put(43, R.drawable.czech_republic);
+        flagButtonMap.put(44, R.drawable.congo_democratic);
+        flagButtonMap.put(45, R.drawable.denmark);
+        flagButtonMap.put(46, R.drawable.djibouti);
+        flagButtonMap.put(47, R.drawable.dominica);
+        flagButtonMap.put(48, R.drawable.dominican_republic);
+        flagButtonMap.put(49, R.drawable.east_timor);
+        flagButtonMap.put(50, R.drawable.ecuador);
+        flagButtonMap.put(51, R.drawable.egypt);
+        flagButtonMap.put(52, R.drawable.el_salvador);
+        flagButtonMap.put(53, R.drawable.equatorial_guinea);
+        flagButtonMap.put(54, R.drawable.eritrea);
+        flagButtonMap.put(55, R.drawable.estonia);
+        flagButtonMap.put(56, R.drawable.ethiopia);
+        flagButtonMap.put(57, R.drawable.fiji);
+        flagButtonMap.put(58, R.drawable.finland);
+        flagButtonMap.put(59, R.drawable.france);
+        flagButtonMap.put(60, R.drawable.gabon);
+        flagButtonMap.put(61, R.drawable.gambia);
+        flagButtonMap.put(62, R.drawable.georgia);
+        flagButtonMap.put(63, R.drawable.germany);
+        flagButtonMap.put(64, R.drawable.ghana);
+        flagButtonMap.put(65, R.drawable.grecee);
+        flagButtonMap.put(66, R.drawable.grenada);
+        flagButtonMap.put(67, R.drawable.guatemala);
+        flagButtonMap.put(68, R.drawable.guinea);
+        flagButtonMap.put(69, R.drawable.guinea_bissau);
+        flagButtonMap.put(70, R.drawable.guyana);
+        flagButtonMap.put(71, R.drawable.haiti);
+        flagButtonMap.put(72, R.drawable.honduras);
+        flagButtonMap.put(73, R.drawable.hong_kong);
+        flagButtonMap.put(74, R.drawable.hungary);
+        flagButtonMap.put(75, R.drawable.iceland);
+        flagButtonMap.put(76, R.drawable.india);
+        flagButtonMap.put(77, R.drawable.indonesia);
+        flagButtonMap.put(78, R.drawable.iran);
+        flagButtonMap.put(79, R.drawable.iraq);
+        flagButtonMap.put(80, R.drawable.ireland);
+        flagButtonMap.put(81, R.drawable.israel);
+        flagButtonMap.put(82, R.drawable.italy);
+        flagButtonMap.put(83, R.drawable.jamaica);
+        flagButtonMap.put(84, R.drawable.japan);
+        flagButtonMap.put(85, R.drawable.jordan);
+        flagButtonMap.put(86, R.drawable.kazakhstan);
+        flagButtonMap.put(87, R.drawable.kenya);
+        flagButtonMap.put(88, R.drawable.kiribati);
+        flagButtonMap.put(89, R.drawable.kosovo);
+        flagButtonMap.put(90, R.drawable.kuwait);
+        flagButtonMap.put(91, R.drawable.kyrgyzstan);
+        flagButtonMap.put(92, R.drawable.laos);
+        flagButtonMap.put(93, R.drawable.latvia);
+        flagButtonMap.put(94, R.drawable.lebanon);
+        flagButtonMap.put(95, R.drawable.lesotho);
+        flagButtonMap.put(96, R.drawable.liberia);
+        flagButtonMap.put(97, R.drawable.libya);
+        flagButtonMap.put(98, R.drawable.liechtenstein);
+        flagButtonMap.put(99, R.drawable.lithuania);
+        flagButtonMap.put(100,R.drawable.luxembourg);
+        flagButtonMap.put(101, R.drawable.macedonia);
+        flagButtonMap.put(102, R.drawable.madagascar);
+        flagButtonMap.put(103, R.drawable.malawi);
+        flagButtonMap.put(104, R.drawable.malaysia);
+        flagButtonMap.put(105, R.drawable.maldives);
+        flagButtonMap.put(106, R.drawable.mali);
+        flagButtonMap.put(107, R.drawable.malta);
+        flagButtonMap.put(108, R.drawable.marshall_islands);
+        flagButtonMap.put(109, R.drawable.mauritania);
+        flagButtonMap.put(110, R.drawable.mauritius);
+        flagButtonMap.put(111, R.drawable.mexico);
+        flagButtonMap.put(112, R.drawable.micronesia_federated);
+        flagButtonMap.put(113, R.drawable.moldova);
+        flagButtonMap.put(114, R.drawable.monaco);
+        flagButtonMap.put(115, R.drawable.mongolia);
+        flagButtonMap.put(116, R.drawable.montenegro);
+        flagButtonMap.put(117, R.drawable.morocco);
+        flagButtonMap.put(118, R.drawable.mozambique);
+        flagButtonMap.put(119, R.drawable.myanmar);
+        flagButtonMap.put(120, R.drawable.namibia);
+        flagButtonMap.put(121, R.drawable.nauru);
+        flagButtonMap.put(122, R.drawable.nepal);
+        flagButtonMap.put(123, R.drawable.netherlands);
+        flagButtonMap.put(124, R.drawable.new_zealand);
+        flagButtonMap.put(125, R.drawable.nicaragua);
+        flagButtonMap.put(126, R.drawable.niger);
+        flagButtonMap.put(127, R.drawable.nigeria);
+        flagButtonMap.put(128, R.drawable.korea_north);
+        flagButtonMap.put(129, R.drawable.norway);
+        flagButtonMap.put(130, R.drawable.oman);
+        flagButtonMap.put(131, R.drawable.pakistan);
+        flagButtonMap.put(132, R.drawable.palau);
+        flagButtonMap.put(133, R.drawable.panama);
+        flagButtonMap.put(134, R.drawable.papua_new_guinea);
+        flagButtonMap.put(135, R.drawable.paraguay);
+        flagButtonMap.put(136, R.drawable.china);
+        flagButtonMap.put(137, R.drawable.peru);
+        flagButtonMap.put(138, R.drawable.philippines);
+        flagButtonMap.put(139, R.drawable.poland);
+        flagButtonMap.put(140, R.drawable.portugal);
+        flagButtonMap.put(141, R.drawable.qatar);
+        flagButtonMap.put(142, R.drawable.congo_republic);
+        flagButtonMap.put(143, R.drawable.romania);
+        flagButtonMap.put(144, R.drawable.russia);
+        flagButtonMap.put(145, R.drawable.rwanda);
+        flagButtonMap.put(146, R.drawable.saint_kitts_and_nevis);
+        flagButtonMap.put(147, R.drawable.saint_lucia);
+        flagButtonMap.put(148, R.drawable.saint_vincent_and_the_grenadines);
+        flagButtonMap.put(149, R.drawable.samoa);
+        flagButtonMap.put(150, R.drawable.san_marino);
+        flagButtonMap.put(151, R.drawable.sao_tome_and_principe);
+        flagButtonMap.put(152, R.drawable.saudi_arabia);
+        flagButtonMap.put(153, R.drawable.senegal);
+        flagButtonMap.put(154, R.drawable.serbia);
+        flagButtonMap.put(155, R.drawable.seychelles);
+        flagButtonMap.put(156, R.drawable.sierra_leone);
+        flagButtonMap.put(157, R.drawable.singapore);
+        flagButtonMap.put(158, R.drawable.slovakia);
+        flagButtonMap.put(159, R.drawable.slovenia);
+        flagButtonMap.put(160, R.drawable.solomon_islands);
+        flagButtonMap.put(161, R.drawable.somalia);
+        flagButtonMap.put(162, R.drawable.south_africa);
+        flagButtonMap.put(163, R.drawable.korea_south);
+        flagButtonMap.put(164, R.drawable.spain);
+        flagButtonMap.put(165, R.drawable.sri_lanka);
+        flagButtonMap.put(166, R.drawable.sudan);
+        flagButtonMap.put(167, R.drawable.suriname);
+        flagButtonMap.put(168, R.drawable.swaziland);
+        flagButtonMap.put(169, R.drawable.sweden);
+        flagButtonMap.put(170, R.drawable.switzerland);
+        flagButtonMap.put(171, R.drawable.syria);
+        flagButtonMap.put(172, R.drawable.taiwan);
+        flagButtonMap.put(173, R.drawable.tajikistan);
+        flagButtonMap.put(174, R.drawable.tanzania);
+        flagButtonMap.put(175, R.drawable.thailand);
+        flagButtonMap.put(176, R.drawable.togo);
+        flagButtonMap.put(177, R.drawable.tonga);
+        flagButtonMap.put(178, R.drawable.trinidad_and_tobago);
+        flagButtonMap.put(179, R.drawable.tunisia);
+        flagButtonMap.put(180, R.drawable.turkey);
+        flagButtonMap.put(181, R.drawable.turkmenistan);
+        flagButtonMap.put(182, R.drawable.tuvalu);
+        flagButtonMap.put(183, R.drawable.uganda);
+        flagButtonMap.put(184, R.drawable.ukraine);
+        flagButtonMap.put(185, R.drawable.united_arab_emirates);
+        flagButtonMap.put(186, R.drawable.united_kingdom);
+        flagButtonMap.put(187, R.drawable.united_states_of_america);
+        flagButtonMap.put(188,R.drawable.uruguay);
+        flagButtonMap.put(189, R.drawable.uzbekistan);
+        flagButtonMap.put(190, R.drawable.vanuatu);
+        flagButtonMap.put(191, R.drawable.vatican_city);
+        flagButtonMap.put(192, R.drawable.venezuela);
+        flagButtonMap.put(193, R.drawable.vietnam);
+        //flagButtonMap.put(194, R.drawable.western_sahara);
+        flagButtonMap.put(195, R.drawable.yemen);
+        flagButtonMap.put(196, R.drawable.zambia);
+        flagButtonMap.put(197, R.drawable.zimbabwe);
+    }
+
+    /**
+     * FLAGS
+     */
+    private static void initFlags() {
+        flagMap.put(1, R.drawable.flag_afghanistan);
+        flagMap.put(2, R.drawable.flag_albania);
+        flagMap.put(3, R.drawable.flag_algeria);
+        flagMap.put(4, R.drawable.flag_andorra);
+        flagMap.put(5, R.drawable.flag_angola);
+        flagMap.put(6, R.drawable.flag_antigua_and_barbuda);
+        flagMap.put(7, R.drawable.flag_argentina);
+        flagMap.put(8, R.drawable.flag_armenia);
+        flagMap.put(9, R.drawable.flag_australia);
+        flagMap.put(10, R.drawable.flag_austria);
+        flagMap.put(11, R.drawable.flag_azerbaijan);
+        flagMap.put(12, R.drawable.flag_bahamas);
+        flagMap.put(13, R.drawable.flag_bahrain);
+        flagMap.put(14, R.drawable.flag_bangladesh);
+        flagMap.put(15, R.drawable.flag_barbados);
+        flagMap.put(16, R.drawable.flag_belarus);
+        flagMap.put(17, R.drawable.flag_belgium);
+        flagMap.put(18, R.drawable.flag_belize);
+        flagMap.put(19, R.drawable.flag_benin);
+        flagMap.put(20, R.drawable.flag_bhutan);
+        flagMap.put(21, R.drawable.flag_bolivia);
+        flagMap.put(22, R.drawable.flag_bosnia);
+        flagMap.put(23, R.drawable.flag_botswana);
+        flagMap.put(24, R.drawable.flag_brazil);
+        flagMap.put(25, R.drawable.flag_brunei);
+        flagMap.put(26, R.drawable.flag_bulgaria);
+        flagMap.put(27, R.drawable.flag_burkina_faso);
+        flagMap.put(28, R.drawable.flag_burundi);
+        flagMap.put(29, R.drawable.flag_cambodia);
+        flagMap.put(30, R.drawable.flag_cameroon);
+        flagMap.put(31, R.drawable.flag_canada);
+        flagMap.put(32, R.drawable.flag_cape_verde);
+        flagMap.put(33, R.drawable.flag_central_african_republic);
+        flagMap.put(34, R.drawable.flag_chad);
+        flagMap.put(35, R.drawable.flag_chile);
+        flagMap.put(36, R.drawable.flag_colombia);
+        flagMap.put(37, R.drawable.flag_comoros);
+        flagMap.put(38, R.drawable.flag_costa_rica);
+        flagMap.put(39, R.drawable.flag_cote_divoire);
+        flagMap.put(40, R.drawable.flag_croatia);
+        flagMap.put(41, R.drawable.flag_cuba);
+        flagMap.put(42, R.drawable.flag_cyprus);
+        flagMap.put(43, R.drawable.flag_czech_republic);
+        flagMap.put(44, R.drawable.flag_democratic_republic_of_the_congo);
+        flagMap.put(45, R.drawable.flag_denmark);
+        flagMap.put(46, R.drawable.flag_djibouti);
+        flagMap.put(47, R.drawable.flag_dominica);
+        flagMap.put(48, R.drawable.flag_dominican_republic);
+        flagMap.put(49, R.drawable.flag_timor_leste);
+        flagMap.put(50, R.drawable.flag_ecuador);
+        flagMap.put(51, R.drawable.flag_egypt);
+        flagMap.put(52, R.drawable.flag_el_salvador);
+        flagMap.put(53, R.drawable.flag_equatorial_guinea);
+        flagMap.put(54, R.drawable.flag_eritrea);
+        flagMap.put(55, R.drawable.flag_estonia);
+        flagMap.put(56, R.drawable.flag_ethiopia);
+        flagMap.put(57, R.drawable.flag_fiji);
+        flagMap.put(58, R.drawable.flag_finland);
+        flagMap.put(59, R.drawable.flag_france);
+        flagMap.put(60, R.drawable.flag_gabon);
+        flagMap.put(61, R.drawable.flag_gambia);
+        flagMap.put(62, R.drawable.flag_georgia);
+        flagMap.put(63, R.drawable.flag_germany);
+        flagMap.put(64, R.drawable.flag_ghana);
+        flagMap.put(65, R.drawable.flag_greece);
+        flagMap.put(66, R.drawable.flag_grenada);
+        flagMap.put(67, R.drawable.flag_guatemala);
+        flagMap.put(68, R.drawable.flag_guinea);
+        flagMap.put(69, R.drawable.flag_guinea_bissau);
+        flagMap.put(70, R.drawable.flag_guyana);
+        flagMap.put(71, R.drawable.flag_haiti);
+        flagMap.put(72, R.drawable.flag_honduras);
+        flagMap.put(73, R.drawable.flag_hong_kong);
+        flagMap.put(74, R.drawable.flag_hungary);
+        flagMap.put(75, R.drawable.flag_iceland);
+        flagMap.put(76, R.drawable.flag_india);
+        flagMap.put(77, R.drawable.flag_indonesia);
+        flagMap.put(78, R.drawable.flag_iran);
+        flagMap.put(79, R.drawable.flag_iraq);
+        flagMap.put(80, R.drawable.flag_ireland);
+        flagMap.put(81, R.drawable.flag_israel);
+        flagMap.put(82, R.drawable.flag_italy);
+        flagMap.put(83, R.drawable.flag_jamaica);
+        flagMap.put(84, R.drawable.flag_japan);
+        flagMap.put(85, R.drawable.flag_jordan);
+        flagMap.put(86, R.drawable.flag_kazakhstan);
+        flagMap.put(87, R.drawable.flag_kenya);
+        flagMap.put(88, R.drawable.flag_kiribati);
+        flagMap.put(89, R.drawable.kosovo);
+        flagMap.put(90, R.drawable.flag_kuwait);
+        flagMap.put(91, R.drawable.flag_kyrgyzstan);
+        flagMap.put(92, R.drawable.flag_laos);
+        flagMap.put(93, R.drawable.flag_latvia);
+        flagMap.put(94, R.drawable.flag_lebanon);
+        flagMap.put(95, R.drawable.flag_lesotho);
+        flagMap.put(96, R.drawable.flag_liberia);
+        flagMap.put(97, R.drawable.flag_libya);
+        flagMap.put(98, R.drawable.flag_liechtenstein);
+        flagMap.put(99, R.drawable.flag_lithuania);
+        flagMap.put(100,R.drawable.flag_luxembourg);
+        flagMap.put(101, R.drawable.flag_macedonia);
+        flagMap.put(102, R.drawable.flag_madagascar);
+        flagMap.put(103, R.drawable.flag_malawi);
+        flagMap.put(104, R.drawable.flag_malaysia);
+        flagMap.put(105, R.drawable.flag_maldives);
+        flagMap.put(106, R.drawable.flag_mali);
+        flagMap.put(107, R.drawable.flag_malta);
+        flagMap.put(108, R.drawable.flag_marshall_islands);
+        flagMap.put(109, R.drawable.flag_mauritania);
+        flagMap.put(110, R.drawable.flag_mauritius);
+        flagMap.put(111, R.drawable.flag_mexico);
+        flagMap.put(112, R.drawable.flag_micronesia);
+        flagMap.put(113, R.drawable.flag_moldova);
+        flagMap.put(114, R.drawable.flag_monaco);
+        flagMap.put(115, R.drawable.flag_mongolia);
+        flagMap.put(116, R.drawable.montenegro);
+        flagMap.put(117, R.drawable.flag_morocco);
+        flagMap.put(118, R.drawable.flag_mozambique);
+        flagMap.put(119, R.drawable.flag_myanmar);
+        flagMap.put(120, R.drawable.flag_namibia);
+        flagMap.put(121, R.drawable.flag_nauru);
+        flagMap.put(122, R.drawable.flag_nepal);
+        flagMap.put(123, R.drawable.flag_netherlands);
+        flagMap.put(124, R.drawable.flag_new_zealand);
+        flagMap.put(125, R.drawable.flag_nicaragua);
+        flagMap.put(126, R.drawable.flag_niger);
+        flagMap.put(127, R.drawable.flag_nigeria);
+        flagMap.put(128, R.drawable.flag_north_korea);
+        flagMap.put(129, R.drawable.flag_norway);
+        flagMap.put(130, R.drawable.flag_oman);
+        flagMap.put(131, R.drawable.flag_pakistan);
+        flagMap.put(132, R.drawable.flag_palau);
+        flagMap.put(133, R.drawable.flag_panama);
+        flagMap.put(134, R.drawable.flag_papua_new_guinea);
+        flagMap.put(135, R.drawable.flag_paraguay);
+        flagMap.put(136, R.drawable.flag_china);
+        flagMap.put(137, R.drawable.flag_peru);
+        flagMap.put(138, R.drawable.flag_philippines);
+        flagMap.put(139, R.drawable.flag_poland);
+        flagMap.put(140, R.drawable.flag_portugal);
+        flagMap.put(141, R.drawable.flag_qatar);
+        flagMap.put(142, R.drawable.flag_republic_of_the_congo);
+        flagMap.put(143, R.drawable.flag_romania);
+        flagMap.put(144, R.drawable.flag_russian_federation);
+        flagMap.put(145, R.drawable.flag_rwanda);
+        flagMap.put(146, R.drawable.flag_saint_kitts_and_nevis);
+        flagMap.put(147, R.drawable.flag_saint_lucia);
+        flagMap.put(148, R.drawable.flag_saint_vicent_and_the_grenadines);
+        flagMap.put(149, R.drawable.flag_samoa);
+        flagMap.put(150, R.drawable.flag_san_marino);
+        flagMap.put(151, R.drawable.sao_tome_and_principe);
+        flagMap.put(152, R.drawable.flag_saudi_arabia);
+        flagMap.put(153, R.drawable.flag_senegal);
+        flagMap.put(155, R.drawable.flag_seychelles);
+        flagMap.put(156, R.drawable.flag_sierra_leone);
+        flagMap.put(157, R.drawable.flag_singapore);
+        flagMap.put(158, R.drawable.flag_slovakia);
+        flagMap.put(159, R.drawable.flag_slovenia);
+        flagMap.put(160, R.drawable.flag_soloman_islands);
+        flagMap.put(161, R.drawable.flag_somalia);
+        flagMap.put(162, R.drawable.flag_south_africa);
+        flagMap.put(163, R.drawable.flag_south_korea);
+        flagMap.put(164, R.drawable.flag_spain);
+        flagMap.put(165, R.drawable.flag_sri_lanka);
+        flagMap.put(166, R.drawable.flag_sudan);
+        flagMap.put(167, R.drawable.flag_suriname);
+        flagMap.put(168, R.drawable.flag_swaziland);
+        flagMap.put(169, R.drawable.flag_sweden);
+        flagMap.put(170, R.drawable.flag_switzerland);
+        flagMap.put(171, R.drawable.flag_syria);
+        flagMap.put(172, R.drawable.flag_taiwan);
+        flagMap.put(173, R.drawable.flag_tajikistan);
+        flagMap.put(174, R.drawable.flag_tanzania);
+        flagMap.put(175, R.drawable.flag_thailand);
+        flagMap.put(176, R.drawable.flag_togo);
+        flagMap.put(177, R.drawable.flag_tonga);
+        flagMap.put(178, R.drawable.flag_trinidad_and_tobago);
+        flagMap.put(179, R.drawable.flag_tunisia);
+        flagMap.put(180, R.drawable.flag_turkey);
+        flagMap.put(181, R.drawable.flag_turkmenistan);
+        flagMap.put(182, R.drawable.flag_tuvalu);
+        flagMap.put(183, R.drawable.flag_uganda);
+        flagMap.put(184, R.drawable.flag_ukraine);
+        flagMap.put(185, R.drawable.flag_uae);
+        flagMap.put(186, R.drawable.flag_united_kingdom);
+        flagMap.put(187, R.drawable.flag_united_states_of_america);
+        flagMap.put(188,R.drawable.flag_uruguay);
+        flagMap.put(189, R.drawable.flag_uzbekistan);
+        flagMap.put(190, R.drawable.flag_vanuatu);
+        flagMap.put(191, R.drawable.flag_vatican_city);
+        flagMap.put(192, R.drawable.flag_venezuela);
+        flagMap.put(193, R.drawable.flag_vietnam);
+        //flagButtonMap.put(194, R.drawable.flag_western_sahara);
+        flagMap.put(195, R.drawable.flag_yemen);
+        flagMap.put(196, R.drawable.flag_zambia);
+        flagMap.put(197, R.drawable.flag_zimbabwe);
+    }
+
+    /**
+     *
+     * @param flagButtId int
+     * @return int {@link #java.lang.Integer}
+     */
+    public static int getButton(int flagButtId) {
+        return flagButtonMap.get(flagButtId);
+    }
+
+    /**
+     *
+     * @param flagId int
+     * @return int {@link #java.lang.Integer}
+     */
+    public static int getFlag(int flagId) {
+        return flagMap.get(flagId);
+    }
+
+}/** end class. */
